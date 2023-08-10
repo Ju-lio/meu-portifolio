@@ -22,6 +22,7 @@ picture {
 img {
    width: 500px;
    height: 500px;
+   animation: animLeft 1s ease 0s 1 normal forwards;
 }
 
 picture {
@@ -30,12 +31,87 @@ picture {
 
 p {
    font-size: 22px;
+   animation: animRight 1s ease 0s 1 normal forwards;
 }
 
 span {
    font-size: 32px;
    color: #BF2727;
    margin: 8px;
+
+   transition: all 0.5s ease-out;
 }
 
+@keyframes animRight {
+	0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
 
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes animLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.neonText:hover {
+   color: #FFDDD7;
+   text-shadow:
+     0 0 7px #C62929,
+     0 0 10px #E28B88,
+     0 0 21px #E28B88,
+     0 0 42px #C62929,
+     0 0 0px #C62929,
+     0 0 0px #C62929,
+     0 0 0px #C62929,
+     0 0 0px #C62929;
+
+     transition: all 0.5s ease-out;
+ }
+
+/*
+.teste {
+   perspective: 500px;
+}
+
+ div {
+   width: 320px;
+   height: 380px;
+   background-color: #969696; 
+   margin-left: 150px;
+
+   border-left: 5px solid #C62929;
+   border-bottom: 5px solid #C62929;
+
+   transform: rotateX(-22deg) rotateY(30deg) rotateZ(20deg);
+   transform-style: preserve-3d;
+} 
+
+svg {
+   width: 500px;
+   height: 500px;
+}
+
+img {
+   width: 500px;
+   height: 500px;
+   position: absolute;
+   left: 16px;
+   top: 74px;
+   mask: url(../../../assets/card.svg);
+   mask-position: bottom;
+   mask-size: 500px;
+}
+*/

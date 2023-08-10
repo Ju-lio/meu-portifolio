@@ -1,0 +1,18 @@
+header {
+   /* background-color: #EC4343; */
+   height: 50px;
+}
+
+nav, ul {
+   height: 100%;
+}
+
+ul {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+li {
+   padding: 0 40px 0 40px;
+}

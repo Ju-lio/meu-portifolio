@@ -1,41 +1,8 @@
 section {
    display: flex;
-   height: 85vh;
+   flex-direction: column;
    align-items: center;
    justify-content: center;
+   height: 100vh;
+   padding-top: 50px;
 }
-
-aside, picture {
-   display: flex;
-   align-items: center;
-   height: 100%;
-}
-
-aside {
-   width: 60%;
-}
-
-picture {
-   width: 40%;
-}
-
-img {
-   width: 500px;
-   height: 500px;
-}
-
-picture {
-   justify-content: center;
-}
-
-p {
-   font-size: 22px;
-}
-
-span {
-   font-size: 32px;
-   color: #BF2727;
-   margin: 8px;
-}
-
-

@@ -1,13 +1,22 @@
 header {
-   /* background-color: #EC4343; */
    height: 50px;
+   width: 100vw;
+   top: 0px;
+   position: fixed;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
-nav, ul {
-   height: 100%;
+nav {
+   background-color: var(--primaryColor);
+   height: inherit;
+   border-radius: 0 0 15px 15px;
+   width: 650px;
 }
 
 ul {
+   height: inherit;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -16,3 +25,68 @@ ul {
 li {
    padding: 0 40px 0 40px;
 }
+
+.navMobile {
+   display: none;
+}
+
+/*
+header {
+   position: absolute;
+   top: 0;
+   height: 50px;
+   width: 100vw;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+nav {
+   width: 600px;
+   height: inherit;
+   align-items: center;
+   justify-content: center;
+}
+
+ul {
+   width:inherit;
+   height: inherit;
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+li {
+   width: 100px;
+   padding: 0 40px 0 40px;
+}
+
+.active {
+   font-size: 32px;
+}
+
+.p0 {
+   position: absolute;
+   opacity: 0;
+}
+.p1 {
+   position: absolute;
+   left: 0px;
+}
+.p2 {
+   position: absolute;
+}
+.p3 {
+   position: absolute;
+   right: 0px;
+}
+
+ @media screen and (max-width: 650px) {
+   .navDesktop {
+      display: none;
+   }
+   .navMobile {
+      display: flex;
+   } 
+}*/

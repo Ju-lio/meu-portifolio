@@ -1,85 +1,122 @@
+/* GENERAL */
 section {
    display: flex;
-   height: 85vh;
+   width: 100vw;
+   height: 100vh;
    align-items: center;
    justify-content: center;
-}
-
-aside, picture {
-   display: flex;
-   align-items: center;
-   height: 100%;
 }
 
 aside {
-   width: 60%;
+   display: flex;
+   width: 50vw;
+   justify-content: flex-start;
 }
 
+/* PICTURE */
+
 picture {
-   width: 40%;
+   display: flex;
+   width: 50vw;
+   height: 50vw;
+   max-height: 500px;
+   justify-content: flex-end;
 }
 
 img {
-   width: 500px;
-   height: 500px;
-   animation: animLeft 1s ease 0s 1 normal forwards;
+   width: 70vw;
+   height: 70vw;
+   max-width: 500px;
+   max-height: 500px;
 }
 
-picture {
-   justify-content: center;
-}
+/* FONT */
 
 p {
    font-size: 22px;
-   animation: animRight 1s ease 0s 1 normal forwards;
 }
 
 span {
-   font-size: 32px;
-   color: #BF2727;
+   font-size: 1.5em;
+   color: var(--primaryColor);
    margin: 8px;
-
-   transition: all 0.5s ease-out;
 }
 
-@keyframes animRight {
-	0% {
-		opacity: 0;
-		transform: translateX(250px);
-	}
+/* MOBILE */
 
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
+@media screen and (max-width: 800px) {
+   aside {
+      width: 100vw;
+      align-items: flex-end;
+      display: flex;
+      justify-content: flex-end;
+   }
+   
+   aside {
+      height: 70vw;
+      justify-content: flex-end;
+      align-items: flex-end;
+      padding: 0 50px 15px 0;
+   }
+   
+   picture {
+      position: absolute;
+      width: 100vw;
+      justify-content: flex-start;
+   }
+   
+   p {
+      font-size: 4vw !important;
+   }
+   span {
+      font-size: 4.5vw !important;
+   }
 }
 
-@keyframes animLeft {
-	0% {
-		opacity: 0;
-		transform: translateX(-250px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
+@media screen and (max-width: 500px) {
+   aside {
+      padding:10px 10px 0 0;
+   }
 }
 
-.neonText:hover {
-   color: #FFDDD7;
-   text-shadow:
-     0 0 7px #C62929,
-     0 0 10px #E28B88,
-     0 0 21px #E28B88,
-     0 0 42px #C62929,
-     0 0 0px #C62929,
-     0 0 0px #C62929,
-     0 0 0px #C62929,
-     0 0 0px #C62929;
+/* @media screen and (max-width: 525px) {
+   aside {
+      padding: 0 25px 15px 25px;
+   }   
+   p {
+      font-size: 18px !important;
+   }
+   span {
+      font-size: 22px !important;
+   }
+}
 
-     transition: all 0.5s ease-out;
- }
+@media screen and (max-width: 500px) {
+   p {
+      font-size: 15px !important;
+   }
+   span {
+      font-size: 20px !important;
+   }
+}
+
+@media screen and (max-width: 450px) {
+   aside {
+      padding: 0 15px 15px 15px;
+   }
+   p {
+      font-size: 12px !important;
+   }
+   span {
+      font-size: 15px !important;
+   }
+} */
+
+/* ANIMATION AND HOVER STYLESING */
+
+span {
+   transition: text-shadow .5s ease-out, color .5s ease-out;
+}
 
 /*
 .teste {

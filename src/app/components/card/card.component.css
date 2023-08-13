@@ -1,0 +1,23 @@
+article {
+   display: flex;
+   width: 60vw;
+   align-items: center;
+   padding: 15px;
+}
+picture {
+   margin-right: 15px;
+   background-color: var(--primaryColor);
+   padding: 10px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+img {
+   padding: 5px;
+   width: 50px;
+   height: 50px;
+   filter: invert(6%) sepia(36%) saturate(562%) hue-rotate(347deg) brightness(95%) contrast(107%);
+}
+

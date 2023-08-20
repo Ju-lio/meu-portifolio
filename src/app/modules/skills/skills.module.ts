@@ -3,10 +3,10 @@ import { CommonModule } from '@angular/common';
 import { SkillsComponent } from './skills.component';
 import { SkillsRoutingModule } from './skills-routing.module';
 import { RouterModule } from '@angular/router';
-import { CardComponent } from 'src/app/components/card/card.component';
+import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
-  declarations: [SkillsComponent, CardComponent],
-  imports: [CommonModule, SkillsRoutingModule, RouterModule]
+  declarations: [SkillsComponent],
+  imports: [CommonModule, SkillsRoutingModule, RouterModule, ComponentsModule],
 })
-export class SkillsModule { }
+export class SkillsModule {}

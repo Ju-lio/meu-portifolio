@@ -1,16 +1,15 @@
 article {
-   margin: 15px;
    display: flex;
-   width: 85vw;
-   /* flex-direction: column; */
-   /* justify-content: center; */
-   /* align-items: center; */
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
 }
 
 h1 {
+   text-align: center;
    font-size: 22px;
    color: var(--primaryColor);
-   margin: 25px 0 10px 25px;
+   margin: 25px 10px;
 }
 
 h2 {
@@ -26,6 +25,7 @@ div {
    border: solid 10px var(--primaryColor);
    border-radius: 50%;
    transition: all .5s ease-out;
+   cursor: pointer;
 }
 
 div:hover {

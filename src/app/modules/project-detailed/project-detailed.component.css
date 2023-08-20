@@ -1,0 +1,42 @@
+body {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+header {
+   margin-top: 100px;
+   width: 80%;
+   height: 150px;
+   background-position: center;
+}
+
+main {
+   width: 80vw;
+   display: flex;
+   padding: 40px;
+   /* align-items: center; */
+   justify-content: center;
+}
+
+section {
+   width: 70%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+h1 {
+   font-size: 28px;
+   color: var(--primaryColor);
+   margin: 15px;
+}
+
+aside {
+   width: 30%;
+   height: 400px;
+   overflow-x: auto;
+   background-color: #2e0606;
+}

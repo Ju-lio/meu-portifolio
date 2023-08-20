@@ -1,11 +1,13 @@
-<section>
-  <app-project-card
-    *ngFor="let project of projects"
-    [id]="project.id"
-    [title]="project.title"
-    [imageUrl]="project.imageUrl!"
-    [aplicationUrl]="project.aplicationUrl"
-    [description]="project.description"
-  >
-  </app-project-card>
-</section>
+<main>
+  <article>
+    <app-project-card
+      *ngFor="let project of projects"
+      [id]="project.id"
+      [title]="project.title"
+      [imageUrl]="project.imageUrl!"
+      [aplicationUrl]="project.aplicationUrl"
+      [description]="project.description"
+    >
+    </app-project-card>
+  </article>
+</main>

@@ -6,18 +6,26 @@ body {
    align-items: center;
 }
 
+button {
+   position: absolute;
+   bottom: 50px;
+   left: 10vw;
+   height: 50px;
+   width: 100px;
+}
+
 header {
    margin-top: 100px;
    width: 80%;
    height: 150px;
    background-position: center;
+   background-size: cover;
 }
 
 main {
    width: 80vw;
    display: flex;
    padding: 40px;
-   /* align-items: center; */
    justify-content: center;
 }
 
@@ -34,9 +42,15 @@ h1 {
    margin: 15px;
 }
 
+p {
+   font-size: 22px;
+   margin-right: 25px;
+}
+
 aside {
    width: 30%;
    height: 400px;
    overflow-x: auto;
+   overflow-x: hidden;
    background-color: #2e0606;
 }

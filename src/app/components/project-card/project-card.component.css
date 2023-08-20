@@ -9,30 +9,22 @@ h1 {
    text-align: center;
    font-size: 22px;
    color: var(--primaryColor);
-   margin: 25px 10px;
+   margin: 10px;
+   width: 150px;
 }
 
-h2 {
-   font-size: 18px;
-   margin-left: 25px;
-}
-
-div {
+a {
    width: 150px;
    height: 150px;
    background-position: center; 
    background-size: auto 250px;
-   border: solid 10px var(--primaryColor);
-   border-radius: 50%;
-   transition: all .5s ease-out;
+   border: solid 5px var(--primaryColor);
+   transition: border .5s ease-out;
    cursor: pointer;
 }
 
-div:hover {
-   transition: all .5s ease-out;
-   border-radius: 10%;
-}
-
-div:hover h2 {
-   font-size: 16px;
+a:hover {
+   transition: border .5s ease-out;
+   border-color: var(--secundaryColor);
+   color: var(--secundaryColor);
 }

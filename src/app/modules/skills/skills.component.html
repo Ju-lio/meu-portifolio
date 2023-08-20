@@ -1,8 +1,12 @@
-<section>
-  <app-card
-  *ngFor="let skill of skills"
-  [imageUrl]="skill.imageUrl"
-  [title]="{text: skill.id, show: true}"
-  [description]="{text: skill.description, show: true}"
- ></app-card>
-</section>
+<div>
+  <article>
+  <section>
+    <app-card
+    *ngFor="let skill of skills"
+    [imageUrl]="skill.imageUrl"
+    [title]="{text: skill.id, show: true}"
+    [description]="{text: skill.description, show: true}"
+  ></app-card>
+  </section>
+</article>
+</div>

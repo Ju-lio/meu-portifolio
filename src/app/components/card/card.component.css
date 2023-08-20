@@ -1,9 +1,10 @@
 article {
    display: flex;
-   width: 60vw;
+   justify-content: flex-start;
    align-items: center;
    padding: 15px;
 }
+
 picture {
    margin-right: 15px;
    background-color: var(--primaryColor);
@@ -20,8 +21,8 @@ h1 {
 
 img {
    padding: 5px;
-   width: 50px;
-   height: 50px;
+   width: 25px;
+   height: 25px;
    filter: invert(6%) sepia(36%) saturate(562%) hue-rotate(347deg) brightness(95%) contrast(107%);
 }
 

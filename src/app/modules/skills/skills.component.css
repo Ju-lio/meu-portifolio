@@ -1,7 +1,22 @@
+div {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+article {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   max-width: 600px;
+}
+
 section {
    display: flex;
    flex-direction: column;
-   height: 100vh;
-   align-items: center;
+   width: 80vw;
+   height: 80vh;
    justify-content: center;
 }

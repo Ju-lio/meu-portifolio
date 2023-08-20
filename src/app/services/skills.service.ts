@@ -41,7 +41,7 @@ export class SkillsService {
     skills.push({
       id: 'JavaScript',
       description:
-        'Conhecimento JavaScript. conhecimento da linguagem de programação, priorizando programação funcional e reativa, para fácil leitura e simplicidade do código, minimizando problemas e facilitanto manutenções e melhorias futuras',
+        'Domínio em JavaScript. conhecimento da linguagem de programação, priorizando a programação funcional e reativa, para fácil leitura e simplicidade do código, minimizando problemas e facilitanto manutenções e melhorias futuras.',
       imageUrl: '/assets/jsIcon.svg',
     });
 

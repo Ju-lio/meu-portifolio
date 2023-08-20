@@ -1,9 +1,16 @@
 <body>
-  <header [style.background-image]="'url(' + activatedProject.imageUrl + ')'"></header>
+  <header
+    [style.background-image]="
+      'url(' + activatedProject.imageUrl + ')'
+    "></header>
   <main>
     <section>
-      <h1>{{activatedProject.title | uppercase}}</h1>
-      <article>{{activatedProject.description}}</article>
+      <h1>{{ activatedProject.title | uppercase }}</h1>
+      <article>
+        <p>
+          {{ activatedProject.description }}
+        </p>
+      </article>
     </section>
     <aside>
       <h1>TECNOLOGIAS UTILIZADAS</h1>
@@ -12,8 +19,7 @@
           *ngFor="let skill of skills"
           [imageUrl]="skill.imageUrl"
           [title]="getTextAtributte(skill.id, true)"
-          [description]="{text: skill.description, show: false}"
-        >
+          [description]="{ text: skill.description, show: false }">
         </app-card>
       </ul>
     </aside>

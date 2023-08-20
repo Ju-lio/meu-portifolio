@@ -1,0 +1,33 @@
+body {
+   background-color: var(--backGroundColor);
+   width: 100vw;
+   height: 100vh;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+p {
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 14pt;
+   font-weight: bold;
+   color: var(--secundaryColor);
+}
+
+input {
+   margin-top: 50px;
+   font-weight: bold;
+   color: var(--secundaryColor);
+   width: 200px;
+   height: 50px;
+   background: var(--primaryColor);
+   border-radius: 5px;
+}
+
+input:hover {
+   background: var(--primaryColor);
+   opacity: 0.7;
+   cursor: pointer;
+}

@@ -26,6 +26,18 @@ li {
    padding: 0 40px 0 40px;
 }
 
+a {
+   border-bottom: solid #fff 0px;
+   margin-bottom: 5px;
+   transition: border .1s ease 0s;
+}
+
+a:hover {
+   border-bottom: solid #FFF 3px;
+   transition: border .1s ease 0s;
+}
+
+
 /*
 header {
    position: absolute;

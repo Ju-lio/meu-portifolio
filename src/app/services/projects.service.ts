@@ -25,10 +25,10 @@ export class ProjectsService {
       id: 'cadastro-de-produto-angular-003',
       title: 'Cadastro de produtos',
       imageUrl:
-        'https://cdn.discordapp.com/attachments/931554086816448566/1140383899097239682/image.png',
+        'https://cdn.discordapp.com/attachments/931554086816448566/1142940258107932753/image.png',
       aplicationUrl: '',
       description:
-        'Este projeto é uma aplicação desenvolvida com o FrameWork Angular com intuito',
+        'Este projeto é uma aplicação CRUD desenvolvida com o FrameWork Angular, neste projeto conseguimos cadastrar, consultar, editar e deletar produtos e grupo de produtos. foram utilizado materias de estilização próprios do site oficial do (material.angular.io)',
       skills: ['Angular', 'TypeScript', 'HTML', 'CSS'],
     });
 

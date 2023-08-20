@@ -1,6 +1,14 @@
-section {
+main {
    display: flex;
    align-items: center;
    justify-content: center;
+}
+
+article {
    padding-top: 100px;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   grid-column-gap: 0px;
+   grid-row-gap: 0px; 
 }
